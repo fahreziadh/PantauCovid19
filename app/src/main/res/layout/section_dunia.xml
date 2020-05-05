@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistik Dunia"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:text="Hari ini" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/aktifKasusBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="100"
+            android:background="@drawable/rounded_bg_green" />
+
+        <View
+            android:id="@+id/meninggalBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4px"
+            android:layout_weight="10"
+            android:background="@drawable/rounded_bg_red" />
+
+        <View
+            android:id="@+id/sembuhBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="30"
+            android:background="@drawable/rounded_bg_blue" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/totalKasusIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Kasus Aktif"
+            android:textColor="@color/colorBlack" />
+
+
+        <TextView
+            android:id="@+id/aktifKasusValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:layout_toLeftOf="@id/totalKasusColor"
+            android:text="0" />
+
+        <View
+            android:id="@+id/totalKasusColor"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_bg_green" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/meninggalIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Meninggal"
+            android:textColor="@color/colorBlack" />
+
+
+        <TextView
+            android:id="@+id/meninggalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:layout_toLeftOf="@id/meninggalColor"
+            android:text="0" />
+
+        <View
+            android:id="@+id/meninggalColor"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_bg_red" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sembuhIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Sembuh"
+            android:textColor="@color/colorBlack" />
+
+
+        <TextView
+            android:id="@+id/sembuhValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:layout_toLeftOf="@id/sembuhColor"
+            android:text="0" />
+
+        <View
+            android:id="@+id/sembuhColor"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_bg_blue" />
+
+    </RelativeLayout>
+</LinearLayout>
+
